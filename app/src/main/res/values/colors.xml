@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Colors for calculate-->
+    <color name="calcBackgroundMain">#04f9c8</color>
+    <color name="calcBackgroundNumber">#393737</color>
+    <color name="calcBackgroundAction">#999696</color>
+    <color name="calcText">#ffffff</color>
+
+    <!--Colors for description-->
+    <color name="descDivider">#cfd7d7</color>
+    <color name="descText">#7a7c7c</color>
+    <color name="descBorder">#590d09f2</color>
+
+    <!--Colors for alto-->
+    <color name="alto_border">#000000</color>
+    <color name="alto_btn_setup">#1dc90c</color>
+    <color name="alto_text_btn">#ffffff</color>
+
+    <!--Colors for registration-->
+    <color name="reg_main">#787878</color>
+    <color name="reg_btn_txt">#ffffff</color>
+
+    <!--Colors for timer-->
+    <color name="timer_txt">#ffffff</color>
+
+    <!--Colors for games-->
+    <color name="games_btn_more_text">#ffffff</color>
+    <color name="games_btn_more_background">#14af06</color>
+    <color name="games_txt_app_price">#14af06</color>
+    <color name="games_border">#5aa9a2a2</color>
+    <color name="games_background">#f7f3f3</color>
+    <color name="games_progress">#036a81</color>
+    <color name="games_progress_back">#2f3131</color>
+
+    <!--Colors for music-->
+    <color name="music_back_dashboard">#f7f3f3</color>
+    <color name="music_seek_bar">#033eef</color>
+</resources>

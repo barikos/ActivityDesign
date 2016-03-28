@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">ActivityDesign</string>
+
+    <!--stings for calculate-->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <!--stings for description-->
+    <string name="playMarket">Play Market</string>
+    <string name="share">Поделиться</string>
+    <string name="desc_app_name">Some Application</string>
+    <string name="desc_achiv">Достижения</string>
+    <string name="desc_rating_play">Рейтинг игроков</string>
+    <string name="desc_cloud">Сохраннные игры</string>
+    <string name="desc_desc_top">Описание</string>
+    <string name="desc_desc_part1">FROM: MEDIOCRE, the award winning lab behind mind altering
+                experiments SMASH HIT and DOES NOT COMMUTE.</string>
+    <string name="desc_desc_part2">SUBJECT: Explore the microverse with top scientist from across
+                the world using the revolutionary DIRAC engine.</string>
+    <string name="desc_mes_top">MESSAGE: Congratulations!</string>
+    <string name="desc_mes_part1">Thanks to the Mediated intern opportunity colocation research
+                (MEDIOCRE) laboratory, you have with DIRAC, the latest in computerized
+                quantum disentanglement technology. You have been granted unlimited and
+                unsupervised access to the DIRAC mkll Quasi-Fibonacci ....bla-bla-bla</string>
+
+    <!--stings for alto-->
+    <string name="alto_app_name">Alto  Adventure</string>
+    <string name="alto_app_company">Noodlecake Studios Inc</string>
+    <string name="alto_age_limit">3+</string>
+    <string name="alto_button_setup">Установить</string>
+    <string name="alto_money">Есть платный контент</string>
+    <string name="alto_description">В снегах раскинулась сонная горная деревушка, обещающая
+                удивительные приключения</string>
+    <string name="alto_read_next">ЧИТАТЬ ДАЛЬШЕ</string>
+    <string name="alto_grade">Оценить приложение</string>
+    <string name="alto_nick">Someone</string>
+    <string name="alto_download">Колличество \n скачиваний</string>
+    <string name="alto_download_count">135 618</string>
+    <string name="alto_app_category">Экшен</string>
+    <string name="alto_similar_app">Похожие</string>
+
+    <!--stings for registration-->
+    <string name="reg_hint_name">Username</string>
+    <string name="reg_hint_mail">Email</string>
+    <string name="reg_hint_pass">Password</string>
+    <string name="reg_hint_profile">Profile name</string>
+    <string name="reg_btn_reg">SIGN UP</string>
+    <string name="reg_question">Have an account already?</string>
+
+    <!--stings for timer-->
+    <string name="timer_time">00</string>
+    <string name="timer_time_h">ч.</string>
+    <string name="timer_time_m">м.</string>
+    <string name="timer_time_s">с.</string>
+
+    <!--stings for games-->
+    <string name="games_new_games">Откройте новые игры</string>
+    <string name="games_btn_more">ЕЩЁ</string>
+    <string name="games_app_name_1">Clash Royale</string>
+    <string name="games_app_name_2">Dragon Land</string>
+    <string name="games_app_name_3">Clash of Kings</string>
+    <string name="games_app_com_1">Supercell</string>
+    <string name="games_app_com_2">socialpoint</string>
+    <string name="games_app_com_3">Elex Wireless</string>
+    <string name="games_app_price_free">БЕСПЛАТНО</string>
+    <string name="games_app_price_3">1,99$</string>
+    <string name="games_user_name">Someone</string>
+    <string name="games_user_descr">Мастрер казуальных игр</string>
+    <string name="games_user_exp">4 000 XP до след. уровня</string>
+    <string name="games_user_count">13</string>
+
+    <!--stings for music-->
+    <string name="music_txt_time_begin">0:01</string>
+    <string name="music_txt_time_end">3:39</string>
+    <string name="music_track_name">Tarantula</string>
+    <string name="music_album_name">Hold Your Colour</string>
+</resources>

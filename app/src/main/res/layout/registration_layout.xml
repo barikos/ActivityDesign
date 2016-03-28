@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TableLayout
+        android:id="@+id/reg_tay_app_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TableRow>
+            <ImageView
+                android:src="@drawable/reg_ic_person_black_18dp"
+                style="@style/reg_img"/>
+            <EditText
+                android:hint="@string/reg_hint_name"
+                style="@style/reg_edt"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:src="@drawable/reg_ic_email_black_18dp"
+                style="@style/reg_img"/>
+            <EditText
+                android:hint="@string/reg_hint_mail"
+                style="@style/reg_edt"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:src="@drawable/reg_ic_business_center_black_18dp"
+                style="@style/reg_img"/>
+            <EditText
+                android:hint="@string/reg_hint_pass"
+                style="@style/reg_edt"/>
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:src="@drawable/reg_ic_child_care_black_18dp"
+                style="@style/reg_img"/>
+            <EditText
+                android:hint="@string/reg_hint_profile"
+                style="@style/reg_edt"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reg_btn_sing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_btn_reg"
+        android:background="@color/reg_main"
+        android:textColor="@color/reg_btn_txt"
+        android:textSize="15sp"
+        android:layout_below="@id/reg_tay_app_form"
+        android:layout_marginTop="40dp"
+        android:padding="15dp"
+        android:shadowDx="50"
+        android:shadowDy="50" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_question"
+        android:textColor="@color/reg_main"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"/>
+    
+</RelativeLayout>
