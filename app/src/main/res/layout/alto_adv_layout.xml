@@ -5,15 +5,13 @@
     android:layout_height="match_parent"
     android:scrollbars="horizontal">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <ImageView
+            android:id="@+id/img_alto_main"
             android:layout_width="match_parent"
             android:layout_height="206dp"
             android:src="@drawable/alto_img_main"
@@ -22,217 +20,206 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_play_circle_filled_black_36dp"
-            android:layout_gravity="center"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:src="@drawable/alto_ic_search_white_24dp"
-            android:layout_gravity="top|right"
+            android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
             android:layout_marginRight="20dp"/>
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/alto_ic_arrow_back_white_24dp"
-            android:layout_gravity="top|left"
+            android:layout_alignParentLeft="true"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"/>
-    </FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alto_ic_play_circle_filled_black_36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-
-        android:padding="20dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/img_alto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/alto_icon"/>
-            <TextView
-                android:id="@+id/txt_app_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alto_app_name"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_toRightOf="@id/img_alto"
-                android:layout_marginLeft="20dp"/>
-            <TextView
-                android:id="@+id/txt_app_com"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alto_app_company"
-                android:layout_toRightOf="@id/img_alto"
-                android:layout_below="@id/txt_app_name"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alto_age_limit"
-                android:textStyle="bold"
-                android:layout_toRightOf="@id/img_alto"
-                android:layout_below="@id/txt_app_com"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
-                android:padding="2dp"
-                android:background="@drawable/alto_border"/>
-
-            <Button
-                android:id="@+id/btn_alto_install"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alto_button_setup"
-                android:layout_below="@id/img_alto"
-                android:layout_alignParentRight="true"
-                style="@style/alto_button_setup"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/alto_money"
-                android:layout_below="@id/btn_alto_install"
-                android:layout_alignParentRight="true"
-                android:layout_marginTop="10dp"/>
-        </RelativeLayout>
-
-        <View android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/descDivider"
+        <ImageView
+            android:id="@+id/img_alto_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alto_icon"
+            android:layout_below="@id/img_alto_main"
             android:layout_marginTop="20dp"
-            style="@style/desc_content_in_border"/>
+            android:layout_marginLeft="20dp"/>
 
-        <TableLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TableRow>
-
-            </TableRow>
-            <TableRow>
-                <TextView
-                    android:text="@string/alto_download"
-                    android:layout_weight="1"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/alto_download_count"/>
-                    <ImageView
-                        android:layout_width="16dp"
-                        android:layout_height="16dp"
-                        android:src="@drawable/alto_ic_person_black_18dp"
-                        android:layout_marginLeft="2dp"/>
-                </LinearLayout>
-                <TextView
-                    android:text="@string/alto_app_category"
-                    android:layout_weight="1"/>
-
-                <TextView
-                    android:text="@string/alto_similar_app"
-                    android:layout_weight="1"/>
-            </TableRow>
-        </TableLayout>
-
-        <View android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/descDivider"
-            android:layout_marginTop="20dp"
-            style="@style/desc_content_in_border"/>
         <TextView
+            android:id="@+id/txt_games_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_app_name"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/img_alto_small"
+            android:layout_alignTop="@id/img_alto_small"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_games_app_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_app_company"
+            android:layout_below="@id/txt_games_app_name"
+            android:layout_toRightOf="@id/img_alto_small"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_age_limit"
+            android:textStyle="bold"
+            android:background="@drawable/alto_border"
+            android:padding="2dp"
+            android:layout_below="@id/txt_games_app_com"
+            android:layout_toRightOf="@id/img_alto_small"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_alto_install"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_button_setup"
+            android:layout_below="@id/img_alto_small"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/alto_text_btn"
+            android:background="@color/alto_btn_setup"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_games_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_money"
+            android:textSize="13sp"
+            android:layout_below="@id/btn_alto_install"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"/>
+
+        <View
+            android:id="@+id/games_line_first"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/descDivider"
+            android:layout_marginTop="7dp"
+            android:layout_below="@id/txt_games_money"
+            />
+
+        <LinearLayout
+            android:id="@+id/lay_games_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/games_line_first">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/games_line_second"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/descDivider"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/lay_games_info"/>
+
+        <TextView
+            android:id="@+id/txt_games_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/alto_description"
             android:gravity="center"
-            android:textSize="16sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="17sp"
+            android:layout_below="@+id/games_line_second"
+            android:layout_marginTop="15dp"/>
 
         <TextView
+            android:id="@+id/txt_games_read_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/alto_read_next"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_games_desc"
             android:layout_marginTop="10dp"
             style="@style/alto_read_next"/>
 
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/alto_img_2"
-        android:scaleType="centerCrop"
-        android:layout_marginTop="10dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/alto_ic_sentiment_satisfied_black_36dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alto_nick"
-        android:textSize="17sp"
-        android:textColor="#000000"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:textStyle="bold"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/alto_grade"
-        android:layout_gravity="center"
-        android:layout_marginTop="5dp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="20dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp">
         <ImageView
+            android:id="@+id/img_alto_main2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alto_img_2"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/txt_games_read_next"/>
+
+        <ImageView
+            android:id="@+id/img_alto_foto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_star_border_black_24dp"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_star_border_black_24dp"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_star_border_black_24dp"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_star_border_black_24dp"
-            android:layout_weight="1"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/alto_ic_star_border_black_24dp"
-            android:layout_weight="1"/>
-    </LinearLayout>
-</LinearLayout>
+            android:src="@drawable/alto_ic_sentiment_satisfied_black_36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_alto_main2"
+            android:layout_marginTop="15dp"/>
 
+        <TextView
+            android:id="@+id/txt_games_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_nick"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:layout_below="@id/img_alto_foto"/>
 
+        <TextView
+            android:id="@+id/txt_games_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alto_grade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/txt_games_nick"/>
+
+        <RatingBar
+            android:id="@+id/rb_games"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_games_grade"
+            android:layout_centerHorizontal="true"
+            android:numStars="5"
+            android:rating="1"
+            android:progressTint="#fab208"/>
+
+        <View
+            android:id="@+id/games_line_third"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/descDivider"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/rb_games"
+            android:layout_marginBottom="10dp"/>
+    </RelativeLayout>
 
 </ScrollView>
