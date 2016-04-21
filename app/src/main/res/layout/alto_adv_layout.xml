@@ -112,8 +112,7 @@
             android:layout_height="1dp"
             android:background="@color/descDivider"
             android:layout_marginTop="7dp"
-            android:layout_below="@id/txt_games_money"
-            />
+            android:layout_below="@id/txt_games_money"/>
 
         <LinearLayout
             android:id="@+id/lay_games_info"

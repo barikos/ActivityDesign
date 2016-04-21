@@ -31,12 +31,14 @@
     <color name="games_btn_more_text">#ffffff</color>
     <color name="games_btn_more_background">#14af06</color>
     <color name="games_txt_app_price">#14af06</color>
-    <color name="games_border">#5aa9a2a2</color>
+    <color name="games_border">#71848484</color>
     <color name="games_background">#f7f3f3</color>
     <color name="games_progress">#036a81</color>
     <color name="games_progress_back">#2f3131</color>
+    <color name="games_header">#00d70e</color>
 
     <!--Colors for music-->
     <color name="music_back_dashboard">#f7f3f3</color>
     <color name="music_seek_bar">#033eef</color>
+    <color name="music_header">#bcfdfdfd</color>
 </resources>

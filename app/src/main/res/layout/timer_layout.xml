@@ -86,8 +86,7 @@
     <View android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/descDivider"
-        android:layout_marginTop="20dp"
-        style="@style/desc_content_in_border"/>
+        android:layout_marginTop="20dp"/>
 
     <TableLayout
         android:layout_width="match_parent"

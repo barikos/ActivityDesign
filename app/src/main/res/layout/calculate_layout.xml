@@ -10,22 +10,22 @@
     tools:context="com.minutes111.activitydesign.MainActivity">
 
 
-    <LinearLayout
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="3">
-    </LinearLayout>
+        android:layout_weight="2">
+    </View>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="4"
+        android:layout_weight="5"
         android:weightSum="16">
 
         <TableLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="12"
             android:background="@color/calcBackgroundNumber"
@@ -81,7 +81,7 @@
         </TableLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:layout_weight="3"
@@ -115,12 +115,12 @@
                 android:paddingBottom="@dimen/calc_row_padding_top_bottom"/>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <View
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="@color/calcBackgroundMain">
-        </LinearLayout>
+        </View>
 
     </LinearLayout>
 

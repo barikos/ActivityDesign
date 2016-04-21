@@ -3,46 +3,67 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
-    <TableLayout
-        android:id="@+id/reg_tay_app_form"
+    <ImageView
+        android:id="@+id/img_reg_per"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/reg_ic_person_black_18dp"
+        android:layout_marginTop="80dp"/>
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-        <TableRow>
-            <ImageView
-                android:src="@drawable/reg_ic_person_black_18dp"
-                style="@style/reg_img"/>
-            <EditText
-                android:hint="@string/reg_hint_name"
-                style="@style/reg_edt"/>
-        </TableRow>
-        <TableRow>
-            <ImageView
-                android:src="@drawable/reg_ic_email_black_18dp"
-                style="@style/reg_img"/>
-            <EditText
-                android:hint="@string/reg_hint_mail"
-                style="@style/reg_edt"/>
-        </TableRow>
-        <TableRow>
-            <ImageView
-                android:src="@drawable/reg_ic_business_center_black_18dp"
-                style="@style/reg_img"/>
-            <EditText
-                android:hint="@string/reg_hint_pass"
-                style="@style/reg_edt"/>
-        </TableRow>
-        <TableRow>
-            <ImageView
-                android:src="@drawable/reg_ic_child_care_black_18dp"
-                style="@style/reg_img"/>
-            <EditText
-                android:hint="@string/reg_hint_profile"
-                style="@style/reg_edt"/>
-        </TableRow>
-    </TableLayout>
+        android:hint="@string/reg_hint_name"
+        android:layout_toRightOf="@id/img_reg_per"
+        android:layout_alignBottom="@id/img_reg_per"
+        android:layout_marginLeft="@dimen/reg_margin_left"/>
+
+    <ImageView
+        android:id="@+id/img_reg_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reg_ic_email_black_18dp"
+        android:layout_below="@id/img_reg_per"
+        android:layout_marginTop="@dimen/reg_margin_top"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_mail"
+        android:layout_toRightOf="@id/img_reg_mail"
+        android:layout_alignBottom="@id/img_reg_mail"
+        android:layout_marginLeft="@dimen/reg_margin_left"/>
+
+    <ImageView
+        android:id="@+id/img_reg_pas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reg_ic_business_center_black_18dp"
+        android:layout_below="@id/img_reg_mail"
+        android:layout_marginTop="@dimen/reg_margin_top"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_pass"
+        android:layout_toRightOf="@id/img_reg_pas"
+        android:layout_alignBottom="@id/img_reg_pas"
+        android:layout_marginLeft="@dimen/reg_margin_left"/>
+
+    <ImageView
+        android:id="@+id/img_reg_prof"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reg_ic_child_care_black_18dp"
+        android:layout_below="@id/img_reg_pas"
+        android:layout_marginTop="@dimen/reg_margin_top"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/reg_hint_profile"
+        android:layout_toRightOf="@id/img_reg_prof"
+        android:layout_alignBottom="@id/img_reg_prof"
+        android:layout_marginLeft="@dimen/reg_margin_left"/>
 
     <Button
         android:id="@+id/reg_btn_sing"
@@ -52,7 +73,7 @@
         android:background="@color/reg_main"
         android:textColor="@color/reg_btn_txt"
         android:textSize="15sp"
-        android:layout_below="@id/reg_tay_app_form"
+        android:layout_below="@id/img_reg_prof"
         android:layout_marginTop="40dp"
         android:padding="15dp"
         android:shadowDx="50"
@@ -68,5 +89,5 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="30dp"/>
-    
+
 </RelativeLayout>

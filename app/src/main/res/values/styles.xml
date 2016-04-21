@@ -31,20 +31,10 @@
         <item name="android:paddingRight">@dimen/calc_row_padding_right_left</item>
     </style>
 
-    <style name="desc_content_in_border">
-        <item name="android:layout_marginLeft">@dimen/desc_margin</item>
-        <item name="android:layout_marginRight">@dimen/desc_margin</item>
-        <item name="android:layout_marginTop">@dimen/desc_margin</item>
-        <item name="android:textColor">@color/descText</item>
-    </style>
 
     <style name="alto_button_setup">
         <item name="android:textColor">@color/alto_text_btn</item>
         <item name="android:background">@color/alto_btn_setup</item>
-        <item name="android:paddingTop">@dimen/alto_btn_padding_top_bot</item>
-        <item name="android:paddingBottom">@dimen/alto_btn_padding_top_bot</item>
-        <item name="android:paddingLeft">@dimen/alto_btn_padding_left_right</item>
-        <item name="android:paddingRight">@dimen/alto_btn_padding_left_right</item>
     </style>
 
     <style name="alto_read_next">
@@ -85,13 +75,6 @@
     </style>
 
     <!--Styles for games-->
-    <style name="games_btn_more">
-        <item name="android:textColor">@color/games_btn_more_text</item>
-        <item name="android:background">@color/games_btn_more_background</item>
-        <item name="android:textSize">@dimen/games_btn_txt_size</item>
-        <item name="android:padding">3dp</item>
-        <item name="android:layout_weight">1</item>
-    </style>
     <style name="games_txt_more_games">
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">@dimen/games_txt_more_games_size</item>

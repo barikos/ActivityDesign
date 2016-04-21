@@ -8,11 +8,10 @@
     <dimen name="calc_row_padding_top_bottom">15dp</dimen>
     <dimen name="calc_row_padding_right_left">15dp</dimen>
 
-    <dimen name="desc_margin">15dp</dimen>
+    <dimen name="desc_margin_lr">20dp</dimen>
 
-    <!-- Dimens for Alto -->
-    <dimen name="alto_btn_padding_top_bot">2dp</dimen>
-    <dimen name="alto_btn_padding_left_right">20dp</dimen>
+    <dimen name="reg_margin_left">30dp</dimen>
+    <dimen name="reg_margin_top">20dp</dimen>
 
     <!-- Dimens for Timer -->
     <dimen name="timer_txt_time">50sp</dimen>

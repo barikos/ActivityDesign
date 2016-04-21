@@ -7,120 +7,128 @@
     android:background="@color/games_background"
     android:padding="10dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-        <FrameLayout
+
+        <View
+            android:id="@+id/view_games_header_1"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
-            android:background="@drawable/games_border">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="#249904">
-
-            </LinearLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_gravity="bottom"
-                android:padding="5dp">
-                <TextView
-                    android:id="@+id/txt_user_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/games_user_name"
-                    android:textSize="@dimen/games_txt_user_name"
-                    android:textStyle="bold"
-                    android:textColor="#000000"/>
-                <TextView
-                    android:id="@+id/txt_user_desc"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/games_user_descr"
-                    android:textSize="11sp"
-                    android:textColor="#000000"
-                    android:layout_below="@id/txt_user_name"
-                    android:layout_marginBottom="@dimen/games_txt_user_desc_align"
-                    android:layout_marginTop="3dp"/>
-                <TextView
-                    android:id="@+id/games_txt_user_exp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/games_user_exp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignBottom="@id/txt_user_name"
-                    android:textSize="11sp"
-                    android:textColor="@color/games_progress"/>
-                <ProgressBar
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="visible"
-                    android:layout_alignParentRight="true"
-                    android:max="100"
-                    android:progress="70"
-                    style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
-                    android:layout_alignBottom="@+id/txt_user_desc"
-                    android:layout_alignTop="@+id/txt_user_desc"
-                    android:layout_alignRight="@id/txt_user_desc"
-                    android:layout_alignLeft="@+id/games_txt_user_exp"
-                    android:layout_alignStart="@+id/games_txt_user_exp"
-                    android:progressTint="@color/games_progress"
-                    android:progressBackgroundTint="@color/games_progress_back"
-                    android:layout_marginTop="3dp"/>
-            </RelativeLayout>
-            <FrameLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="5dp">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/games_user_foto"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/games_circle"
-                    android:layout_gravity="bottom|right"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/games_user_count"
-                    android:textColor="#ffffff"
-                    android:layout_gravity="right|bottom"
-                    android:layout_marginBottom="@dimen/games_marg_circle_number"
-                    android:layout_marginRight="@dimen/games_marg_circle_number"/>
-
-            </FrameLayout>
-        </FrameLayout>
-
-        <LinearLayout
+            android:layout_height="70dp"
+            android:background="@drawable/games_header_border_1"/>
+        <View
+            android:id="@+id/view_games_header_2"
             android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@id/view_games_header_1"
+            android:background="@drawable/games_header_border_2"/>
+
+        <TextView
+            android:id="@+id/txt_games_user_name"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:layout_marginTop="20dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/games_new_games"
-                style="@style/games_txt_more_games"
-                android:layout_gravity="center"/>
-            <Button
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
-                android:text="@string/games_btn_more"
-                style="@style/games_btn_more"
-                android:paddingTop="1dp"/>
-        </LinearLayout>
+            android:text="@string/games_user_name"
+            android:textSize="@dimen/games_txt_user_name"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@id/view_games_header_1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_user_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/games_user_descr"
+            android:textSize="11sp"
+            android:textColor="#000000"
+            android:layout_below="@id/txt_games_user_name"
+            android:layout_marginBottom="@dimen/games_txt_user_desc_align"
+            android:layout_marginTop="3dp"
+            android:layout_alignLeft="@id/txt_games_user_name"/>
+
+        <TextView
+            android:id="@+id/games_txt_user_exp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/games_user_exp"
+            android:layout_alignBottom="@id/txt_games_user_name"
+            android:layout_alignRight="@id/view_games_header_2"
+            android:layout_marginRight="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/games_progress"/>
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            android:layout_alignParentRight="true"
+            android:max="100"
+            android:progress="70"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_alignBottom="@+id/txt_user_desc"
+            android:layout_alignTop="@+id/txt_user_desc"
+            android:layout_alignRight="@id/txt_user_desc"
+            android:layout_alignLeft="@+id/games_txt_user_exp"
+            android:layout_alignStart="@+id/games_txt_user_exp"
+            android:progressTint="@color/games_progress"
+            android:progressBackgroundTint="@color/games_progress_back"
+            android:layout_marginTop="3dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_games_user_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/games_user_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageView
+            android:id="@+id/img_games_user_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/games_circle"
+            android:layout_alignBottom="@id/img_games_user_photo"
+            android:layout_alignRight="@id/img_games_user_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/games_user_count"
+            android:textColor="#ffffff"
+            android:layout_alignBottom="@id/img_games_user_circle"
+            android:layout_alignRight="@id/img_games_user_circle"
+            android:layout_marginBottom="@dimen/games_marg_circle_number"
+            android:layout_marginRight="@dimen/games_marg_circle_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/games_new_games"
+            android:layout_below="@id/view_games_header_2"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            style="@style/games_txt_more_games"
+            android:layout_gravity="center"/>
+        <Button
+            android:id="@+id/btn_games_more"
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:text="@string/games_btn_more"
+            android:layout_below="@id/view_games_header_2"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:background="@color/games_btn_more_background"
+            android:textColor="@color/games_btn_more_text"/>
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btn_games_more">
 
             <TableRow>
                 <LinearLayout
@@ -148,8 +156,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/games_app_layout"
-                    >
+                    style="@style/games_app_layout">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -223,8 +230,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    style="@style/games_app_layout"
-                    >
+                    style="@style/games_app_layout">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -272,7 +278,7 @@
             </TableRow>
 
         </TableLayout>
-    </LinearLayout>
 
+    </RelativeLayout>
 
 </ScrollView>
